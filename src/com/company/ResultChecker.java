@@ -18,7 +18,7 @@ public class ResultChecker {
             return false;
         }
         wordCollectionArray wordCollection= new wordCollectionArray();
-        String[] wordAvailableArray= wordCollection.dictionaryEnglish();
+        String[] wordAvailableArray= wordCollection.publicDictionaryEnglish();
         Set<String> wordSet= new HashSet<>();
         Collections.addAll(wordSet, wordAvailableArray);
         if(!wordSet.contains(answer)){
@@ -49,12 +49,12 @@ public class ResultChecker {
     }
 
     //TODO: Public and the actual method responsible for declaring the result...
-    public void winChecker(String answer, String jumbledQuestion) throws Exception {
+    public void winChecker(String answer, String jumbledQuestion, String ActualQuestion) throws Exception {
         if(isCorrect(answer, jumbledQuestion)){
             System.out.println("The answer is correct.......");
         }
         else{
-            System.out.println("The answer is wrong.......");
+            System.out.println("The answer is wrong......."+" The actual answer was "+ActualQuestion+"....");
         }
     }
 }
