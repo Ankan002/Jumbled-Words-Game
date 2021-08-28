@@ -1,1 +1,1 @@
-#H1 To Install the game onto your PC follow the steps given below:
+# To Install the game onto your PC follow the steps given below:
